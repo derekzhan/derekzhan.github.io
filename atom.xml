@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhanwc.com/"/>
-  <updated>2017-03-16T02:15:45.851Z</updated>
+  <updated>2017-03-16T03:48:35.208Z</updated>
   <id>http://zhanwc.com/</id>
   
   <author>
@@ -14,6 +14,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>新博客</title>
+    <link href="http://zhanwc.com/2017/03/16/%E6%96%B0%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://zhanwc.com/2017/03/16/新博客/</id>
+    <published>2017-03-16T03:39:09.000Z</published>
+    <updated>2017-03-16T03:48:35.208Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="新博客"><a href="#新博客" class="headerlink" title="新博客"></a>新博客</h2><p>以后所有的技术文章都在此记录，另外曾经的博客地址为: <a href="http://javapyer.iteye.com/" target="_blank" rel="external">旧博客</a>!</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;新博客&quot;&gt;&lt;a href=&quot;#新博客&quot; class=&quot;headerlink&quot; title=&quot;新博客&quot;&gt;&lt;/a&gt;新博客&lt;/h2&gt;&lt;p&gt;以后所有的技术文章都在此记录，另外曾经的博客地址为: &lt;a href=&quot;http://javapyer.iteye.com/&quot; ta
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

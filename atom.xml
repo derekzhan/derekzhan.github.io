@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhanwc.com/"/>
-  <updated>2017-04-11T05:43:00.461Z</updated>
+  <updated>2017-04-11T05:47:00.306Z</updated>
   <id>http://zhanwc.com/</id>
   
   <author>
@@ -20,32 +20,19 @@
     <link href="http://zhanwc.com/2017/04/11/windows%E6%90%AD%E5%BB%BAjenkins%E9%9B%86%E6%88%90%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83/"/>
     <id>http://zhanwc.com/2017/04/11/windows搭建jenkins集成测试环境/</id>
     <published>2017-04-11T03:06:16.000Z</published>
-    <updated>2017-04-11T05:43:00.461Z</updated>
+    <updated>2017-04-11T05:47:00.306Z</updated>
     
-    <content type="html"><![CDATA[<ol>
-<li>从官网下载jenkins安装包，地址： jenkins ，选择长期支持版本，如图：</li>
-</ol>
+    <content type="html"><![CDATA[<p>###1.从官网下载jenkins安装包，地址： jenkins ，选择长期支持版本，如图：</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/3334542-ae52b6bb4849ce90.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<ol>
-<li><p>安装，常规安装方式，step by step，安装的时候一定不要选择带空格的目录，比如： Program Files ，后面启动过程中会有很多坑的。</p>
-</li>
-<li><p>安装后启动，在windows服务中启动即可。</p>
-</li>
-<li><p>用浏览器打开：http:ip:8080. 第一次打开要求输入密码，密码所在路径：secrets目录下的initXXXpassword的文件中；输入密码后出现<br><img src="http://upload-images.jianshu.io/upload_images/3334542-1cab1ca9af0bc3dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-</li>
-</ol>
+<p>2.安装，常规安装方式，step by step，安装的时候一定不要选择带空格的目录，比如： Program Files ，后面启动过程中会有很多坑的。</p>
+<p>3.安装后启动，在windows服务中启动即可。</p>
+<p>4.用浏览器打开：http:ip:8080. 第一次打开要求输入密码，密码所在路径：secrets目录下的initXXXpassword的文件中；输入密码后出现<br><img src="http://upload-images.jianshu.io/upload_images/3334542-1cab1ca9af0bc3dd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p>安装插件<br>可选建议安装或自定义安装。</p>
-<ol>
-<li>安装必要插件 deploy war to container plugin， 必须要安装这个插件才能部署到容器中</li>
-</ol>
+<p>5.安装必要插件 deploy war to container plugin， 必须要安装这个插件才能部署到容器中</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/3334542-adf6081a36352d52.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p>插件</p>
-<ol>
-<li><p>创建项目，新建–&gt;输入项目名称–&gt;构建自由软件的项目–&gt;OK; </p>
-</li>
-<li><p>配置项目；</p>
-</li>
-</ol>
+<p>6.创建项目，新建–&gt;输入项目名称–&gt;构建自由软件的项目–&gt;OK; </p>
+<p>7.配置项目；</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/3334542-da8a27ae16d96f89.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p>公共配置<br>配置构建：<br><img src="http://upload-images.jianshu.io/upload_images/3334542-0f55b415f8ff840e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p>构建<br>配置部署，这里一定要填写war包的相对路径，不能填写绝对路径，在添加容器的时候我选择的是tomcat7，实际上我用的是tomcat8也是可以的，图2中配置tomcat manager账号和密码已经tomcat地址，这里的地址只需写到跟目录即可。</p>
@@ -53,9 +40,7 @@
 <p>图1</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/3334542-b90c92f4a341b271.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p>图2<br>8.保存， 此时运行是会出错的，因为tomcat还没配置manager。</p>
-<ol>
-<li>配置tomcat的manager权限</li>
-</ol>
+<p>9.配置tomcat的manager权限</p>
 <p>打开tomcat/conf/tomcat-users.xml文件</p>
 <p>添加如下内容：</p>
 <role rolename="manager-gui">
@@ -67,20 +52,15 @@
 <p>allow=”\d+.\d+.\d+.\d+|::1|0:0:0:0:0:0:0:1”</p>
 <p>修改完毕，重启tomcat，浏览器打开<a href="http://ip:port/manager" target="_blank" rel="external">http://ip:port/manager</a> 输入上面配置username和password登录。出现如下图表示配置成功。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/3334542-b9bacbe5477fe52e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p>manager<br><img src="http://upload-images.jianshu.io/upload_images/3334542-b9bacbe5477fe52e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<ol>
-<li>回到jenkins页面点击立即构建，没有问题表示成功，如下图。若有问题请联系我。</li>
-</ol>
+<p>manager<br><img src="http://upload-images.jianshu.io/upload_images/3334542-b9bacbe5477fe52e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>10.回到jenkins页面点击立即构建，没有问题表示成功，如下图。若有问题请联系我。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/3334542-2a8965c7c5489963.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p>具体使用jenkins的方法不在本文范围内讨论，请参考jenkins官网。</p>
 </user></role>]]></content>
     
     <summary type="html">
     
-      &lt;ol&gt;
-&lt;li&gt;从官网下载jenkins安装包，地址： jenkins ，选择长期支持版本，如图：&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/3334542-ae52b6bb484
+      &lt;p&gt;###1.从官网下载jenkins安装包，地址： jenkins ，选择长期支持版本，如图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/3334542-ae52b6bb4849ce90.pn
     
     </summary>
     

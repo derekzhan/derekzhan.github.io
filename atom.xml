@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhanwc.com/"/>
-  <updated>2017-04-11T05:47:00.306Z</updated>
+  <updated>2017-04-11T05:49:46.955Z</updated>
   <id>http://zhanwc.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://zhanwc.com/2017/04/11/windows%E6%90%AD%E5%BB%BAjenkins%E9%9B%86%E6%88%90%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83/"/>
     <id>http://zhanwc.com/2017/04/11/windows搭建jenkins集成测试环境/</id>
     <published>2017-04-11T03:06:16.000Z</published>
-    <updated>2017-04-11T05:47:00.306Z</updated>
+    <updated>2017-04-11T05:49:46.955Z</updated>
     
     <content type="html"><![CDATA[<p>###1.从官网下载jenkins安装包，地址： jenkins ，选择长期支持版本，如图：</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/3334542-ae52b6bb4849ce90.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
@@ -52,7 +52,7 @@
 <p>allow=”\d+.\d+.\d+.\d+|::1|0:0:0:0:0:0:0:1”</p>
 <p>修改完毕，重启tomcat，浏览器打开<a href="http://ip:port/manager" target="_blank" rel="external">http://ip:port/manager</a> 输入上面配置username和password登录。出现如下图表示配置成功。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/3334542-b9bacbe5477fe52e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
-<p>manager<br><img src="http://upload-images.jianshu.io/upload_images/3334542-b9bacbe5477fe52e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br>10.回到jenkins页面点击立即构建，没有问题表示成功，如下图。若有问题请联系我。</p>
+<p>manager<br>10.回到jenkins页面点击立即构建，没有问题表示成功，如下图。若有问题请联系我。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/3334542-2a8965c7c5489963.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
 <p>具体使用jenkins的方法不在本文范围内讨论，请参考jenkins官网。</p>
 </user></role>]]></content>
